@@ -1,8 +1,15 @@
 body {
   font-family: 'Noto Serif SC', serif;
-  background-color: #fff8dc;
+  background-color: #fffaf0;
+  color: #4b2e2e;
   text-align: center;
   padding: 2em;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  color: #7f4f24;
 }
 
 button {
@@ -12,12 +19,17 @@ button {
   cursor: pointer;
   border-radius: 10px;
   border: none;
-  background-color: #d4a373;
+  background-color: #bb9457;
   color: white;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
 }
 
 .upgrade {
   margin-top: 2em;
-  border-top: 1px solid #aaa;
+  border-top: 2px solid #d4a373;
   padding-top: 1em;
 }
