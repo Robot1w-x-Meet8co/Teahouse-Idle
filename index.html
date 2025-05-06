@@ -4,10 +4,14 @@
   <meta charset="UTF-8">
   <title>茶馆 Tycoon</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
 </head>
 <body>
   <h1>茶馆 Tycoon</h1>
+
   <p>💴 钱: ¥<span id="money">0</span></p>
+  <p>🧍‍♂️ 客人已服务: <span id="served">0</span> 位</p>
+  <p>📜 吉祥话: <span id="fortune">“茶能醉人亦能醒人”</span></p>
 
   <button id="serveTea">🍵 上茶！(+¥<span id="perClick">1</span>)</button>
 
@@ -16,6 +20,17 @@
     <p>花费 ¥<span id="upgradeCost">10</span> 提升 +¥1/点击</p>
     <button id="upgradeBtn">升级</button>
   </div>
+
+  <div class="upgrade">
+    <h3>购买自动上茶</h3>
+    <p>花费 ¥<span id="autoCost">50</span>，每秒自动服务 1 位</p>
+    <button id="autoBtn">购买</button>
+  </div>
+
+  <audio id="bgMusic" loop autoplay>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/31/audio_7f197ec2f4.mp3?filename=oriental-chill-111242.mp3" type="audio/mp3">
+    您的浏览器不支持音频播放。
+  </audio>
 
   <script src="script.js"></script>
 </body>
